@@ -44,7 +44,7 @@ pipeline {
         sh '/usr/bin/ansible localhost -m ping'
       }
     }
-    stage('') {
+    stage('end') {
       steps {
         readFile '*.xml'
       }
